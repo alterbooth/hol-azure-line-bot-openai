@@ -19,7 +19,7 @@
   
 下記スクリーンショットに倣って情報を入力します。  
 入力後「確認および作成」を選択、確認および作成の画面で「作成」と移ってください。  
-![Azure Functions作成3](images/create_functions_3.png)  
+![Azure Functions作成3](images/create_functions_5.png)  
   
 以下のように「デプロイが完了しました」と表示されれば、Azure Functionsリソース作成完了です。  
 ![Azure Functions作成4](images/create_functions_4.png)  
@@ -47,7 +47,8 @@ LINE Messaging APIのチャネルを作成します。
 ![MessagingAPI](images/messaging_api_1.png)  
   
 必須項目に任意の値を入力し、利用規約の同意にチェックした後「作成」を選択します。  
-![MessagingAPI](images/messaging_api_2.png)  
+![MessagingAPI](images/messaging_api_10.png)  
+![MessagingAPI](images/messaging_api_11.png)  
   
 次に、Messaging APIに関する各種設定を行います。  
 「Messaging API設定」タブを開きます。  
@@ -55,8 +56,11 @@ LINE Messaging APIのチャネルを作成します。
   
 応答メッセージをオフにします。（オンの状態だと、毎回定型文が返答されてしまうため）  
 ![MessagingAPI](images/messaging_api_3.png)  
-![MessagingAPI](images/messaging_api_4.png)  
-  
+![MessagingAPI](images/messaging_api_12.png)  
+
+次に、LINE Developersのページに戻り   
+![MessagingAPI設定](images/messaging_api_13.png)    
+
 チャネルアクセストークンを発行し、コピーします。  
 ![MessagingAPI](images/messaging_api_5.png)  
   
