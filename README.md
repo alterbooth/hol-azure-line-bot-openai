@@ -28,6 +28,7 @@
 ![アーキテクチャ図](./docs/images/hol-azure-line-bot-architecture.png)
 
 ## 目次
-1. [Functionsの作成](./docs/1-functions-create.md)
+1. [ソースコードの準備](./docs/2-functions-create.md)
+2. [Functionsの作成](./docs/1-functions-create.md)
 
 上記手順完了後、作成した全てのリソースグループを削除してください。
