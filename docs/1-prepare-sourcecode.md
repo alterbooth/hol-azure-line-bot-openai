@@ -5,7 +5,7 @@
 
 
 次に、Githubからソースコードをフォークします。
-[Githubハンズオンリポジトリ](https://github.com/alterbooth/hol-azure-line-bot-functions) を開き、右上の「Fork」をクリックします。
+[ハンズオンのソースコードリポジトリ](https://github.com/alterbooth/hol-azure-line-bot-functions) を開き、右上の「Fork」をクリックします。
 ![ソースコードの準備1](images/preparing_source_1.png)
 
 
@@ -19,29 +19,32 @@ Ownerの「Select an owner」で自分のアカウントを選択し、一番下
 
 VSCodeを開き、ターミナルでディレクトリを先ほど作ったフォルダに移動し、クローンしたリポジトリを開きます。<br>
 まずは、VSCodeの左下をクリックし、ターミナルを開きます。
+
 ![ソースコードの準備5](images/preparing_source_5.png)
 ![ソースコードの準備6](images/preparing_source_6.png)
 
 <!-- ターミナルで「cd 保存先のディレクトリ」(cd半角スペース)と入力し、handsonディレクトリに移動 -->
 <!-- ![ソースコードの準備7](images/preparing_source_7.png) -->
-ターミナルで`handson`ディレクトリに移動し、「git clone https://github.com/alterbooth/hol-azure-line-bot-functions.git 」とコマンドを入力します。
+ターミナルで`handson`ディレクトリに移動し、`git clone コピーしてきたHTTPS`とコマンドを入力します。
 ![ソースコードの準備8](images/preparing_source_8.png)
 
-「code .」とコマンド入力すると、ローカルでコードを開きます。
+`code .`とコマンド入力すると、ローカルでコードを開きます。
 ![ソースコードの準備9](images/preparing_source_9.png)
 
+<br>
 
 ## 1-2. devcontainerを使って開発環境を立ち上げる
-まずは、「Docker Desktop」を開いておきます。
-先ほど開いたソースコードのVSCodeで、「F1キー」を押し、「Dev Containers:Reopen in Container」を選択。
+まずは、`Docker Desktop`を開いておきます。
+先ほど開いたソースコードのVSCodeのターミナルで、今回クローンしてきた`hol-azure-line-bot-functions`ディレクトリに移動します。
+F1キーを押し、「Dev Containers:Reopen in Container」を選択。
 ![devcontainer起動1](images/devcontainer_start_1.png)
 
 VSCodeが立上がりコンテナが動いているのが確認できます。
-![devcontainer起動2]()
+![devcontainer起動2](images/devcontainer_start_2.png)
 
 次に、ローカルで関数アプリを立ち上げます。<br>
-今立ち上がったVSCodeのターミナルでhol-azure-line-bot-functionsのFunctionsディレクトリに移動し、「func start --csharp」とコマンド入力します。
-![devcontainer起動3]()
+devcontainerが動いているターミナルでhol-azure-line-bot-functionsの`Functions`ディレクトリに移動し、`func start --csharp`とコマンド入力します。下の画像のように、`webhook: [POST] http://localhost:7071.....`がでたらdevcontainer上でFunctionsの起動が成功です！
+![devcontainer起動3](images/devcontainer_start_3.png)
 
 
 

@@ -5,7 +5,7 @@
 ![リソースグループ作成1](images/create_resourcegroup_1.png)  
   
 「作成」ボタンから、リソースグループ作成画面を開き、情報を入力します。  
-![リソースグループ作成2](images/create_resourcegroup_2.png)  
+![リソースグループ作成2](images/create_resourcegroup_4.png)  
   
 「確認および作成」タブより、「作成」ボタンを押下します。  
 ![リソースグループ作成3](images/create_resourcegroup_3.png)  
@@ -16,7 +16,8 @@
   
 リソースの作成画面が開けたら、「関数アプリ」を選択します。  
 ![Azure Functions作成2](images/create_functions_2.png)  
-  
+
+プランは`Functions App`で「作成」  
 下記スクリーンショットに倣って情報を入力します。  
 入力後「確認および作成」を選択、確認および作成の画面で「作成」と移ってください。  
 ![Azure Functions作成3](images/create_functions_5.png)  
@@ -25,17 +26,31 @@
 ![Azure Functions作成4](images/create_functions_4.png)  
 
 ## 2-2. デプロイ
-作成したAzure Functionsリソースにサンプルコードをデプロイします。  
-Visual Studio Codeを開き、Azure Tools拡張機能を追加します。  
+「Functionsリソース作成」手順で作成したAzure Functionsリソースにサンプルコードをデプロイします。  
+作成したAzure Functionsを開き、`デプロイセンター`を選択します。  
 ![MessagingAPI](images/deploy_functions_1.png)  
   
-「Functionsリソース作成」手順にて作成したAzure Functionsを右クリック選択し、「Deploy to Function App」を選択します。  
+コードソースを選択で「GitHub」を選択し、下記の手順で必要事項を選択したらファイルのプレビューをクリックします。
+ - 「組織」自分のアカウント
+ - 「リポジトリ」hol-azure-line-bot-functions
+ - 「ブランチ」main
+
 ![MessagingAPI](images/deploy_functions_2.png)  
   
-「Select the folder to deploy」入力欄が表示されたら、Browseから **Functions** フォルダを選択します。  
-「Initialize project for use with VS Code?」と出たらYesを選択してください。  
-「Deployment to "リソース名" completed.」と通知が出たらデプロイ成功です。  
+ymlファイルが右側にでますので「Close」をクリックし、上の「保存」を選択します。
 ![MessagingAPI](images/deploy_functions_3.png)  
+
+GitHubの自分のアカウントの`hol-azure-line-bot-functions`に戻り、ページを更新します。`.github/workflows`ファイルができています。
+![MessagingAPI](images/deploy_functions_4.png)
+
+「Actions」を選択し、ビルドとデプロイができているか確認し、緑のチェックマークになっていればビルドとデプロイ成功です。
+![MessagingAPI](images/deploy_functions_5.png)
+
+リモートリポジトリにできたyamlファイルをローカルにもコピーします。
+VSCodeのターミナルで`hol-azure-line-bot-functions`ディレクトリに移動し、`git fetch`コマンドを入力した後に`git pull`コマンドを入力します。
+ローカルに`.github\workflows`フォルダの中に`.yml`ファイルができていることが確認できます。
+![MessagingAPI](images/deploy_functions_6.png)
+
 
 ## 2-3. LINEチャネル作成
 [LINE Developers Console](https://developers.line.biz/console/) を開きます。  
@@ -83,10 +98,14 @@ AzureポータルよりFunctionsのURLを取得します。
 Messaging API設定画面のWebhook URLに入力し、更新後、「Webhookの利用」をオンにします。  
 ![MessagingAPI](images/messaging_api_9.png)  
   
-Messaging API設定画面中で確認できるQRコードを読み込み、LINE友達登録します。
+Messaging API設定画面中で確認できる`QRコード`を読み込み、LINE友達登録します。
 
 ## 2-4. 動作確認
 LINEを開き、送信したメッセージと同じメッセージが返信されることを確認します。  
 ![MessagingAPI](images/line_1.png)  
   
-確認できたら、次のステップ「[Webアプリの作成](./2-web-create.md)」へ進みます。
+<br>
+
+## ハンズオン終了後
+***今回のハンズオンが終了したら、Azureポータルからハンズオン用に作成した全てのリソースグループを削除してください。***
+![MessagingAPI](images/delete_resourcegroup_1.png) 
