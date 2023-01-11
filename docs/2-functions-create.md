@@ -37,10 +37,10 @@
 
 ![MessagingAPI](images/deploy_functions_2.png)  
   
-ymlファイルが右側にでますので「Close」をクリックし、上の「保存」を選択します。
+yamlファイルが右側にでますので「Close」をクリックし、上の「保存」を選択します。
 ![MessagingAPI](images/deploy_functions_3.png)  
 
-GitHubの自分のアカウントの`hol-azure-line-bot-functions`に戻り、ページを更新します。`.github/workflows`ファイルができています。
+GitHubの自分のアカウントの`hol-azure-line-bot-functions`に戻り、ページを更新します。`.github/workflows`ファイルができていることが確認できます。この中に自動生成されたyamlファイルが含まれます。
 ![MessagingAPI](images/deploy_functions_4.png)
 
 「Actions」を選択し、ビルドとデプロイができているか確認し、緑のチェックマークになっていればビルドとデプロイ成功です。
@@ -48,7 +48,7 @@ GitHubの自分のアカウントの`hol-azure-line-bot-functions`に戻り、�
 
 リモートリポジトリにできたyamlファイルをローカルにもコピーします。
 VSCodeのターミナルで`hol-azure-line-bot-functions`ディレクトリに移動し、`git fetch`コマンドを入力した後に`git pull`コマンドを入力します。
-ローカルに`.github\workflows`フォルダの中に`.yml`ファイルができていることが確認できます。
+ローカルに`.github\workflows`フォルダの中に`yamlファイル`ができていることが確認できます。
 ![MessagingAPI](images/deploy_functions_6.png)
 
 
