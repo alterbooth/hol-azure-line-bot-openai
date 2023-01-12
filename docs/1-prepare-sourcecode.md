@@ -17,17 +17,16 @@ Ownerの「Select an owner」で自分のアカウントを選択し、一番下
 フォークしたリポジトリの「Code」をクリックし、HTTPSをコピーします。
 ![ソースコードの準備3](images/preparing_source_3.png)
 
-VSCodeを開き、ターミナルでディレクトリを先ほど作ったフォルダに移動し、クローンしたリポジトリを開きます。  
+<!-- VSCodeを開き、ターミナルでディレクトリを先ほど作ったフォルダに移動し、クローンしたリポジトリを開きます。  
 まずは、VSCodeでターミナルを開きます。  
 ショートカットキー Windowsの場合`Ctrl + @`、Macの場合`Command + J`
-![ソースコードの準備6](images/preparing_source_6.png)
+![ソースコードの準備6](images/preparing_source_6.png) -->
 
-<!-- ターミナルで「cd 保存先のディレクトリ」(cd半角スペース)と入力し、handsonディレクトリに移動 -->
-<!-- ![ソースコードの準備7](images/preparing_source_7.png) -->
-パソコンのターミナルで`handson`ディレクトリに移動し、`git clone コピーしてきたHTTPS`とコマンドを入力します。
+PCのターミナルを開き、`handson`ディレクトリに移動し、`git clone コピーしてきたHTTPS`とコマンドを入力します。  
+(PCのターミナルでgitコマンドが使えるようにしておいてください。)
 ![ソースコードの準備8](images/preparing_source_8.png)
 
-VSCodeを開き、左上の「File」→「Open Folder」で`handson`を開き、ローカルでコードを開きます。    
+VSCodeを開き、左上の「File」→「Open Folder」で`handson`フォルダを選択、ローカルでコードを開きます。    
      
 ## 1-2. devcontainerを使って開発環境を立ち上げる
 まずは、`Docker`を起動した状態(Docker Desktopを使用する場合は、Docker Desktopを起動した状態)にします。  

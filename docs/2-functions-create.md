@@ -46,7 +46,7 @@ GitHubの自分のアカウントの`hol-azure-line-bot-functions`に戻り、�
 「Actions」を選択し、ビルドとデプロイができているか確認し、緑のチェックマークになっていればビルドとデプロイ成功です。
 ![MessagingAPI](images/deploy_functions_5.png)
 
-リモートリポジトリにできたyamlファイルをローカルにもコピーします。
+リモートリポジトリにできたyamlファイルをローカルにもコピーします。  
 VSCodeのターミナルで`hol-azure-line-bot-functions`ディレクトリに移動し、`git fetch`コマンドを入力した後に`git pull`コマンドを入力します。
 ローカルに`.github\workflows`フォルダの中に**yamlファイル**ができていることが確認できます。
 ![MessagingAPI](images/deploy_functions_6.png)

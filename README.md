@@ -23,6 +23,8 @@
     - https://developers.line.biz/ja/docs/line-developers-console/login-account/
 - Docker Desktop 
     - https://www.docker.com/ 
+- git 
+    - https://git-scm.com/
 
 ## 本ハンズオンで実装するアーキテクチャ
 ![アーキテクチャ図](./docs/images/hol-azure-line-bot-architecture.png)
