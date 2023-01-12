@@ -40,7 +40,7 @@
 yamlファイルが右側にでますので「Close」をクリックし、上の「保存」を選択します。
 ![MessagingAPI](images/deploy_functions_3.png)  
 
-GitHubの自分のアカウントの`hol-azure-line-bot-functions`に戻り、ページを更新します。`.github/workflows`ファイルができていることが確認できます。この中に自動生成されたyamlファイルが含まれます。
+GitHubの自分のアカウントの`hol-azure-line-bot-functions`に戻り、ページを更新します。`.github/workflows`フォルダができていることが確認できます。この中に自動生成されたyamlファイルが含まれます。
 ![MessagingAPI](images/deploy_functions_4.png)
 
 「Actions」を選択し、ビルドとデプロイができているか確認し、緑のチェックマークになっていればビルドとデプロイ成功です。
@@ -48,7 +48,7 @@ GitHubの自分のアカウントの`hol-azure-line-bot-functions`に戻り、�
 
 リモートリポジトリにできたyamlファイルをローカルにもコピーします。
 VSCodeのターミナルで`hol-azure-line-bot-functions`ディレクトリに移動し、`git fetch`コマンドを入力した後に`git pull`コマンドを入力します。
-ローカルに`.github\workflows`フォルダの中に`yamlファイル`ができていることが確認できます。
+ローカルに`.github\workflows`フォルダの中に**yamlファイル**ができていることが確認できます。
 ![MessagingAPI](images/deploy_functions_6.png)
 
 
@@ -98,14 +98,13 @@ AzureポータルよりFunctionsのURLを取得します。
 Messaging API設定画面のWebhook URLに入力し、更新後、「Webhookの利用」をオンにします。  
 ![MessagingAPI](images/messaging_api_9.png)  
   
-Messaging API設定画面中で確認できる`QRコード`を読み込み、LINE友達登録します。
+Messaging API設定画面中で確認できる**QRコード**を読み込み、LINE友達登録します。
 
 ## 2-4. 動作確認
 LINEを開き、送信したメッセージと同じメッセージが返信されることを確認します。  
-![MessagingAPI](images/line_1.png)  
+![MessagingAPI](images/line_1.png)    
   
-<br>
 
 ## ハンズオン終了後
-***今回のハンズオンが終了したら、Azureポータルからハンズオン用に作成した全てのリソースグループを削除してください。***
+**今回のハンズオンが終了したら、Azureポータルからハンズオン用に作成した全てのリソースグループを削除してください。**
 ![MessagingAPI](images/delete_resourcegroup_1.png) 
