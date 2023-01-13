@@ -32,5 +32,6 @@
 ## 目次
 1. [ソースコードの準備](./docs/1-prepare-sourcecode.md)
 2. [Functionsの作成](./docs/2-functions-create.md)
+3. [返信内容の変更と再デプロイ](/docs/3-reply-redeploy.md)
 
 上記手順完了後、作成した全てのリソースグループを削除してください。
