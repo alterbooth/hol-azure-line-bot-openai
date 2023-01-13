@@ -15,12 +15,7 @@ Ownerの「Select an owner」で自分のアカウントを選択し、一番下
 
 次に、自分のアカウントのリポジトリからフォークしてきたコードをCloneします。  
 フォークしたリポジトリの「Code」をクリックし、HTTPSをコピーします。
-![ソースコードの準備3](images/preparing_source_3.png)
-
-<!-- VSCodeを開き、ターミナルでディレクトリを先ほど作ったフォルダに移動し、クローンしたリポジトリを開きます。  
-まずは、VSCodeでターミナルを開きます。  
-ショートカットキー Windowsの場合`Ctrl + @`、Macの場合`Command + J`
-![ソースコードの準備6](images/preparing_source_6.png) -->
+![ソースコードの準備3](images/preparing_source_3.png)  
 
 PCのターミナルを開き、`handson`ディレクトリに移動し、`git clone コピーしてきたHTTPS`とコマンドを入力します。  
 (PCのターミナルでgitコマンドが使えるようにしておいてください。)

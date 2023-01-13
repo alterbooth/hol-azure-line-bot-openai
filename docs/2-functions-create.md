@@ -48,7 +48,7 @@ GitHubの自分のアカウントの`hol-azure-line-bot-functions`に戻り、�
 
 リモートリポジトリにできたyamlファイルをローカルにもコピーします。  
 VSCodeのターミナルで`hol-azure-line-bot-functions`ディレクトリに移動し、`git fetch`コマンドを入力した後に`git pull`コマンドを入力します。
-ローカルに`.github\workflows`フォルダの中に**yamlファイル**ができていることが確認できます。
+ローカルに`.github/workflows`フォルダの中に**yamlファイル**ができていることが確認できます。
 ![MessagingAPI](images/deploy_functions_6.png)
 
 
