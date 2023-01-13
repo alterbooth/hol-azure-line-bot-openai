@@ -105,6 +105,3 @@ LINEを開き、送信したメッセージと同じメッセージが返信さ�
 ![MessagingAPI](images/line_1.png)    
   
 
-## ハンズオン終了後
-**今回のハンズオンが終了したら、Azureポータルからハンズオン用に作成した全てのリソースグループを削除してください。**
-![MessagingAPI](images/delete_resourcegroup_1.png) 
