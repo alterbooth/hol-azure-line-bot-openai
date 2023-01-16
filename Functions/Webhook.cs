@@ -66,7 +66,6 @@ namespace Functions
             // await Reply(firstEvent.ReplyToken, replyText);
             
             return new OkResult();
-
         }
 
         /// <summary>
