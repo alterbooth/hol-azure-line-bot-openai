@@ -14,7 +14,7 @@ git push origin main
 ```
 
 次にGitHub Actionsの実行結果を確認します。  
-ご自身のGitHubリポジトリから「Actions」タブを開きます。  
+ご自身のGitHubリポジトリページから「Actions」タブを開きます。  
 ビルドとデプロイができているか確認し、緑のチェックマークになっていれば再ビルドと再デプロイが成功です。  
 ![返信メッセージの変更2](images/reply_change_2.png)
 
