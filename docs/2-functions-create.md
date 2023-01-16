@@ -104,7 +104,4 @@ Messaging API設定画面中で確認できる**QRコード**を読み込み、L
 LINEを開き、送信したメッセージと同じメッセージが返信されることを確認します。  
 ![MessagingAPI](images/line_1.png)    
   
-
-## ハンズオン終了後
-**今回のハンズオンが終了したら、Azureポータルからハンズオン用に作成した全てのリソースグループを削除してください。**
-![MessagingAPI](images/delete_resourcegroup_1.png) 
+確認できたら、次のステップ「[返信内容の変更と再デプロイ](/docs/3-reply-redeploy.md)」へ進みます。

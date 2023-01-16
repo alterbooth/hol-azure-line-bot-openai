@@ -56,9 +56,15 @@ namespace Functions
                 return null;
             }
 
-            // オウム返しする
+            // オウム返しする 
+            // この一行をコメントアウトする
             await Reply(firstEvent.ReplyToken, firstEvent.Message.Text);
 
+            //　以下3行のコメントアウトをはずす
+            // var sendMessage = firstEvent.Message.Text;
+            // var replyText = sendMessage == "今日の天気は？" ? "晴れです。" : sendMessage;
+            // await Reply(firstEvent.ReplyToken, replyText);
+            
             return new OkResult();
         }
 
