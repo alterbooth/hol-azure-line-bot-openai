@@ -8,7 +8,7 @@
 ## 4-2. LINE Messaging APIのWebhookイベント  
 ハンズオンの2章でWebhookイベントを使用しました。
 Webhookに関して詳しくここで説明しています。  
-[LINE MEssaging APIのWrbhoookイベントドキュメント](https://developers.line.biz/ja/reference/messaging-api/)
+[LINE Messaging APIのWebhoookイベント(テキストメッセージ)](https://developers.line.biz/ja/reference/messaging-api/)
 
 また、Messaging APIの概要や仕組みについてのドキュメントもありますので、何ができるのかぜひ見てみましょう。  
 [Messaging APIの概要](https://developers.line.biz/ja/docs/messaging-api/overview/)
