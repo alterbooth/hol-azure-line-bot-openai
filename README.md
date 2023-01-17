@@ -7,24 +7,24 @@
 
 ## 実施環境
 本サンプルは下記のツールやアカウントを用意した上で実施することを推奨します。
+- Git
+    - https://git-scm.com/
+    - インストール後、PCのターミナルでgitコマンドが使用できるかご確認をお願いします。 `git --version` など
+- Docker
+    - https://www.docker.com/
+    - インストール後、PCのターミナルでdockerコマンドが使用できるかご確認をお願いします。
+        - hello worldイメージを試す: https://hub.docker.com/_/hello-world
 - Visual Studio Code
     - https://azure.microsoft.com/ja-jp/products/visual-studio-code/
-- Visual Studio Code 用の C# 拡張機能
-    - https://marketplace.visualstudio.com/items?itemName=ms-dotnettools.csharp
-- Visual Studio Code 用の Azure Functions 拡張機能
-    - https://marketplace.visualstudio.com/items?itemName=ms-azuretools.vscode-azurefunctions
-- Visual Studio Code 用の Azure Tools 拡張機能
-    - https://marketplace.visualstudio.com/items?itemName=ms-vscode.vscode-node-azure-pack
-- .NET 6.0
-    - https://dotnet.microsoft.com/ja-jp/download/dotnet/6.0
-- Azure アカウント
-    - https://azure.microsoft.com/ja-jp/free/
+- Visual Studio Code 用の Remote Development 拡張機能
+    - https://marketplace.visualstudio.com/items?itemName=ms-vscode-remote.vscode-remote-extensionpack
+- （上記Docker,VSCodeのインストールを含む）Dev Containersセットアップ手順
+    - https://code.visualstudio.com/docs/devcontainers/containers#_installation
 - LINE Developers アカウント
     - https://developers.line.biz/ja/docs/line-developers-console/login-account/
-- Docker Desktop 
-    - https://www.docker.com/ 
-- git 
-    - https://git-scm.com/
+- Azure アカウント
+    - https://azure.microsoft.com/ja-jp/free/
+    - (学生の方: https://azure.microsoft.com/ja-jp/free/students/ )
 
 ## 本ハンズオンで実装するアーキテクチャ
 ![アーキテクチャ図](./docs/images/hol-azure-line-bot-architecture.png)
