@@ -33,4 +33,4 @@ LINEで`今日の天気は？`と入力し、送信します。 **晴れです�
 ![リソースの削除](images/delete_resourcegroup_1.png)  
 
 
-時間が余った人は,、ハンズオン後に詳しい内容や続きを勉強してみましょう！「[ドキュメントの補足](/docs/4-document-suppliment.md)」
+時間が余った人は、ハンズオン後に詳しい内容や続きを勉強してみましょう！「[ドキュメントの補足](/docs/4-document-suppliment.md)」
