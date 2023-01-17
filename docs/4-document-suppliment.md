@@ -1,7 +1,7 @@
 # 4. ハンズオンの内容をもっと詳しく学ぶ
 ## 4-1. Azure Functionsのトリガーとバインド  
 ハンズオンの2章でAzure Functionsを使用しました。  
-トリガーとバインドに関する概念をここで詳しく説明しています。
+トリガーとバインドに関する概念をここで詳しく説明しています。  
 [AzureFunctionsのトリガーとバインドの概念](https://learn.microsoft.com/ja-jp/azure/azure-functions/functions-triggers-bindings?tabs=csharp)
 
 
