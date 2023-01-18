@@ -47,7 +47,7 @@ GitHubの自分のアカウントの`hol-azure-line-bot-functions`に戻り、�
 ![MessagingAPI](images/deploy_functions_5.png)
 
 リモートリポジトリにできたyamlファイルをローカルにもコピーします。  
-VSCodeのターミナルで`hol-azure-line-bot-functions`ディレクトリに移動し、`git fetch`コマンドを入力した後に`git pull`コマンドを入力します。
+任意のターミナル（gitコマンドが使えるもの）で`hol-azure-line-bot-functions`ディレクトリに移動し、`git fetch`コマンドを入力した後に`git pull`コマンドを入力します。
 ローカルに`.github/workflows`フォルダの中に**yamlファイル**ができていることが確認できます。
 ![MessagingAPI](images/deploy_functions_6.png)
 
@@ -99,6 +99,8 @@ Messaging API設定画面のWebhook URLに入力し、更新後、「Webhookの�
 ![MessagingAPI](images/messaging_api_9.png)  
   
 Messaging API設定画面中で確認できる**QRコード**を読み込み、LINE友達登録します。
+
+![QRコード](images/line-bot-qr.png)
 
 ## 2-4. 動作確認
 LINEを開き、送信したメッセージと同じメッセージが返信されることを確認します。  

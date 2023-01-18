@@ -21,20 +21,4 @@ PCのターミナルを開き、`handson`ディレクトリに移動し、`git c
 (PCのターミナルでgitコマンドが使えるようにしておいてください。)
 ![ソースコードの準備8](images/preparing_source_8.png)
 
-VSCodeを開き、左上の「File」→「Open Folder」で`handson`フォルダを選択、ローカルでコードを開きます。    
-     
-## 1-2. devcontainerを使って開発環境を立ち上げる
-まずは、`Docker`を起動した状態(Docker Desktopを使用する場合は、Docker Desktopを起動した状態)にします。  
-先ほど開いたソースコードのVSCodeのターミナルで、今回クローンしてきた`hol-azure-line-bot-functions`ディレクトリに移動します。  
-F1キーを押し、「Dev Containers:Reopen in Container」を選択。
-![devcontainer起動1](images/devcontainer_start_1.png)
-
-VSCodeが立上がりコンテナが動いているのが確認できます。
-![devcontainer起動2](images/devcontainer_start_2.png)
-
-次に、ローカルで関数アプリを立ち上げます。   
-devcontainerが動いているターミナルでhol-azure-line-bot-functionsの`Functions`ディレクトリに移動し、`func start --csharp`とコマンド入力します。下の画像のように、`webhook: [POST] http://localhost:7071.....`がでたらdevcontainer上でFunctionsの起動が成功です！
-![devcontainer起動3](images/devcontainer_start_3.png)
-
 確認できたら、次のステップ「[Functionsの作成](/docs/2-functions-create.md)」へ進みます。
-
