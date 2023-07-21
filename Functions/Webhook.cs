@@ -13,6 +13,8 @@ using System.Collections.Generic;
 using System.Net.Http;
 using System.Text;
 using Microsoft.Extensions.Configuration;
+// using Azure;
+// using Azure.AI.OpenAI;
 
 namespace Functions
 {
@@ -56,15 +58,30 @@ namespace Functions
                 return null;
             }
 
-            // オウム返しする 
+            // オウム返しする
             // この一行をコメントアウトする
             await Reply(firstEvent.ReplyToken, firstEvent.Message.Text);
 
-            //　以下3行のコメントアウトをはずす
-            // var sendMessage = firstEvent.Message.Text;
-            // var replyText = sendMessage == "今日の天気は？" ? "晴れです。" : sendMessage;
+            // 以下の18行と、16,17行目のコメントアウトをはずす
+            // string prompt = firstEvent.Message.Text;
+            // OpenAIClient client = new OpenAIClient(
+            //     new Uri(Environment.GetEnvironmentVariable("AZURE_OPENAI_API_URL")),
+            //     new AzureKeyCredential(Environment.GetEnvironmentVariable("AZURE_OPENAI_API_KEY")));
+            // Response<ChatCompletions> responseWithoutStream = await client.GetChatCompletionsAsync(
+            //     Environment.GetEnvironmentVariable("AZURE_OPENAI_API_MODEL_NAME"),
+            //     new ChatCompletionsOptions()
+            //     {
+            //         Messages =
+            //         {
+            //             new ChatMessage(ChatRole.System, "あなたは親切なアシスタントAIです。"),
+            //             new ChatMessage(ChatRole.User, prompt),
+            //         },
+            //         MaxTokens = 800,
+            //     });
+            // ChatCompletions completions = responseWithoutStream.Value;
+            // string replyText = completions.Choices[0].Message.Content;
             // await Reply(firstEvent.ReplyToken, replyText);
-            
+
             return new OkResult();
         }
 
