@@ -43,7 +43,7 @@
 - アプリケーション設定に「新しいアプリケーション設定」を追加
     - `AZURE_OPENAI_API_KEY` : OpenAI Service のキー,
     - `AZURE_OPENAI_API_URL` : OpenAI Service のエンドポイント,
-    - `AZURE_OPENAI_API_DEPLOY_NAME` : OpenAI Service のデプロイ名,
+    - `AZURE_OPENAI_API_MODEL_NAME` : OpenAI Service のデプロイ名,
 - 「保存」ボタンを押下
 ![MessagingAPI](images/setting_env_variables_1.png)  
   
