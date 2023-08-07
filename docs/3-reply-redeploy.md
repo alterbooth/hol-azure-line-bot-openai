@@ -58,18 +58,13 @@ using System.Collections.Generic;
 using System.Net.Http;
 using System.Text;
 using Microsoft.Extensions.Configuration;
-// using Azure;
-// using Azure.AI.OpenAI;
+using Azure;
+using Azure.AI.OpenAI;
 ```
 
 コードの中に**オウム返しをする**というコメントがあります。近くに`コメントアウトする`と`コメントアウトをはずす`という記載がありますので、内容に従って作業し、コードを保存します。  
 
 ```cs
-using Azure;            // 16行目
-using Azure.AI.OpenAI;  // 17行目
-
-/* ～～～ 中略 ～～～ */
-
 // オウム返しする
 // この一行をコメントアウトする
 await Reply(firstEvent.ReplyToken, firstEvent.Message.Text);
