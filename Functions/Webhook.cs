@@ -62,12 +62,12 @@ namespace Functions
             // この一行をコメントアウトする
             await Reply(firstEvent.ReplyToken, firstEvent.Message.Text);
 
-            // 以下の18行と、16,17行目のコメントアウトをはずす
-            // string prompt = firstEvent.Message.Text;
-            // OpenAIClient client = new OpenAIClient(
+            // 以下のコメントアウトをはずす
+            // var prompt = firstEvent.Message.Text;
+            // var client = new OpenAIClient(
             //     new Uri(Environment.GetEnvironmentVariable("AZURE_OPENAI_API_URL")),
             //     new AzureKeyCredential(Environment.GetEnvironmentVariable("AZURE_OPENAI_API_KEY")));
-            // Response<ChatCompletions> responseWithoutStream = await client.GetChatCompletionsAsync(
+            // var responseWithoutStream = await client.GetChatCompletionsAsync(
             //     Environment.GetEnvironmentVariable("AZURE_OPENAI_API_MODEL_NAME"),
             //     new ChatCompletionsOptions()
             //     {
@@ -78,8 +78,12 @@ namespace Functions
             //         },
             //         MaxTokens = 800,
             //     });
-            // ChatCompletions completions = responseWithoutStream.Value;
-            // string replyText = completions.Choices[0].Message.Content;
+            // if (responseWithoutStream.Value == null || !responseWithoutStream.Value.Choices.Any())
+            // {
+            //     log.LogWarning("Azure OpenAI Service response is null. prompt = {prompt}", prompt);
+            //     return null;
+            // }
+            // var replyText = responseWithoutStream.Value.Choices[0].Message.Content;
             // await Reply(firstEvent.ReplyToken, replyText);
 
             return new OkResult();
