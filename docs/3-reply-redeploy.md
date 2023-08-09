@@ -49,6 +49,8 @@
   
 ## 3-5. LINEの返答内容を変更
 LINEで送信したメッセージに対してAzure OpenAI Serviceが返信するように変更します。  
+ソースコードを変更するため、GitHub上の自身のリポジトリのページから `/Functions/Webhook.cs` を開き、鉛筆アイコンのボタン（Edit this file）を押下します。  
+  
 まず、 `using Azure;` と `Azure.AI.OpenAI;` をアンコメントします。  
 ※サンプルコードでは[Azure.AI.OpenAIのNuGetパッケージ](https://www.nuget.org/packages/Azure.AI.OpenAI)を使用します。  
 今回は予めサンプルのFunctions.csprojにパッケージ参照定義を行ってあります。  
@@ -63,7 +65,7 @@ using Azure.AI.OpenAI;
 ```
 
 コードの中に**オウム返しをする**というコメントがあります。  
-近くに`コメントアウトする`と`コメントアウトをはずす`という記載がありますので、内容に従ってコードを以下のように変更し保存します。  
+近くに`コメントアウトする`と`コメントアウトをはずす`という記載がありますので、内容に従ってコードを以下のように変更します。  
 
 ```cs
 // オウム返しする
@@ -96,15 +98,10 @@ log.LogInformation("replyText: {replyText}", replyText);
 await Reply(firstEvent.ReplyToken, replyText);
 ```
 
-## 3-6. 再デプロイ
-ターミナルで下記のコマンドを実行し、GitHubにpushします。  
-```
-git add .  
-git commit -m "Update reply message using Azure OpenAI Service"
-git push origin main 
-```
+画面右上の「Commit saves...」ボタンを押下して変更を保存します。
 
-次にGitHub Actionsの実行結果を確認します。  
+## 3-6. 再デプロイ
+先ほどのコミットを起点にGitHub Actionsが実行されるため、その実行結果を確認します。  
 ご自身のGitHubリポジトリページから「Actions」タブを開きます。  
 ビルドとデプロイができているか確認し、緑のチェックマークになっていれば再ビルドと再デプロイが成功です。  
 ![返信メッセージの変更2](images/reply_change_2.png)

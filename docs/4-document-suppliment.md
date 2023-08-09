@@ -1,5 +1,7 @@
 # 4. （上級編）Dev Containersとngrokを使ってローカルデバッグを行う
 ## 4-1. ローカルデバッグ手順
+※事前にソースコードをcloneしてください。
+
 ### Dev Containersを使って開発環境を立ち上げる
 まずは、`Docker`を起動した状態(Docker Desktopを使用する場合は、Docker Desktopを起動した状態)にします。  
 VSCodeを起動し、左上の「File」→「Open Folder」で`hol-azure-line-bot-functions`フォルダを開きます。  

@@ -6,20 +6,25 @@
 本リポジトリをcloneもしくはダウンロードしてから手順を開始してください。
 
 ## 実施環境
-本サンプルは下記のツールやアカウントを用意した上で実施することを推奨します。
-- Git
-    - https://git-scm.com/
-    - インストール後、PCのターミナルでgitコマンドが使用できるかご確認をお願いします
-        - `git --version` など
-- Visual Studio Code
-    - https://azure.microsoft.com/ja-jp/products/visual-studio-code/
+本ハンズオンの実施には、以下アカウントが必要です。
+
+- GitHub アカウント
+    - https://github.com/
 - LINE Developers アカウント
     - https://developers.line.biz/ja/docs/line-developers-console/login-account/
 - Azure アカウント
     - https://azure.microsoft.com/ja-jp/free/
     - (学生の方: https://azure.microsoft.com/ja-jp/free/students/ )
 
-### ※上級編のローカルデバッグを行いたい方向け
+### （任意）上級編のローカルデバッグを行いたい方向け
+本ハンズオンのソースコードのローカルデバッグを行うには、以下ツールが必要です。
+
+- Git
+    - https://git-scm.com/
+    - インストール後、PCのターミナルでgitコマンドが使用できるかご確認をお願いします
+        - `git --version` など
+- Visual Studio Code
+    - https://azure.microsoft.com/ja-jp/products/visual-studio-code/
 - Dev Containersセットアップ
     - https://code.visualstudio.com/docs/devcontainers/containers#_installation
     - Docker
