@@ -84,6 +84,7 @@ namespace Functions
             //     return null;
             // }
             // var replyText = responseWithoutStream.Value.Choices[0].Message.Content;
+            // log.LogInformation("replyText: {replyText}", replyText);
             // await Reply(firstEvent.ReplyToken, replyText);
 
             return new OkResult();

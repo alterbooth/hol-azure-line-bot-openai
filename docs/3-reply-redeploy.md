@@ -92,6 +92,7 @@ if (responseWithoutStream.Value == null || !responseWithoutStream.Value.Choices.
     return null;
 }
 var replyText = responseWithoutStream.Value.Choices[0].Message.Content;
+log.LogInformation("replyText: {replyText}", replyText);
 await Reply(firstEvent.ReplyToken, replyText);
 ```
 
