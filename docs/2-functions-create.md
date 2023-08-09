@@ -46,12 +46,6 @@ GitHubの自分のアカウントの`hol-azure-line-bot-functions`に戻り、�
 「Actions」を選択し、ビルドとデプロイができているか確認し、緑のチェックマークになっていればビルドとデプロイ成功です。
 ![MessagingAPI](images/deploy_functions_5.png)
 
-リモートリポジトリにできたyamlファイルをローカルにもコピーします。  
-任意のターミナル（gitコマンドが使えるもの）で`hol-azure-line-bot-functions`ディレクトリに移動し、`git fetch`コマンドを入力した後に`git pull`コマンドを入力します。
-ローカルに`.github/workflows`フォルダの中に**yamlファイル**ができていることが確認できます。
-![MessagingAPI](images/deploy_functions_6.png)
-
-
 ## 2-3. LINEチャネル作成
 [LINE Developers Console](https://developers.line.biz/console/) を開きます。  
 プロバイダーを登録していない場合は、任意の名前で登録します。  
