@@ -42,8 +42,8 @@
 
 ## 目次
 1. [ソースコードの準備](./docs/1-prepare-sourcecode.md)
-2. [Functionsの作成](./docs/2-functions-create.md)
+2. [LINE Botの作成](./docs/2-functions-create.md)
 3. [返信内容の変更と再デプロイ](/docs/3-reply-redeploy.md)
-4. [（上級編）Dev Containersとngrokを使ってローカルデバッグを行う](/docs/4-document-suppliment.md)
+4. [（上級編）Azure Functionsのローカルデバッグを行う](/docs/4-document-suppliment.md)
 
 上記手順完了後、作成した全てのリソースグループを削除してください。
