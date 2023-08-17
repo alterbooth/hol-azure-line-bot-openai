@@ -1,4 +1,4 @@
-# 3. 返答内容の変更と再デプロイ
+# 3. Azure OpenAI Serviceを使って返信内容を作成するよう更新
 ## 3-1. Azure OpenAI Serviceの作成
 ### Azure OpenAI Serviceリソースの作成
 まず、Azure OpenAI Serviceのリソースを作成します。  
@@ -135,4 +135,4 @@ await Reply(firstEvent.ReplyToken, replyText);
 
 ![リソースの削除](images/delete_resourcegroup_1.png)
 
-時間が余った方は、ローカルデバッグにチャレンジしてみましょう！「[4. （上級編）Azure Functionsのローカルデバッグを行う](/docs/4-document-suppliment.md)」
+時間が余った方は、ローカルデバッグにチャレンジしてみましょう！「[4. （上級編）Azure Functionsのローカルデバッグを行う](./docs/4-debug.md)」

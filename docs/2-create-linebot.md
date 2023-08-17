@@ -147,4 +147,4 @@ Messaging API設定画面中で確認できるQRコードをご自身の端末�
 
 ![MessagingAPI](images/line_1.png)
 
-返信メッセージが確認できたら、次のステップ「[3. 返信内容の変更と再デプロイ](/docs/3-reply-redeploy.md)」へ進みます。
+返信メッセージが確認できたら、次のステップ「[3. Azure OpenAI Serviceを使って返信内容を作成するよう更新](./3-update-reply-from-openai.md)」へ進みます。
