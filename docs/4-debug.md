@@ -7,7 +7,7 @@ Codespacesが利用できる方は [4-1. Codespacesでデバッグを行う](#4-
 ご自身のGitHubリポジトリページから「Code」ボタンを選択し、出てきたメニューの「Codespaces」タブを選択します。  
 「Create codespace on main」を選択します。
 
-![Codespacesデバッグ1](images/debug_codespaces_1.png)
+![Codespaces起動ボタン](images/debug_codespaces_1.png)
 
 ### local.settings.jsonを作成
 `Functions/local.settings.json` ファイルを作成します。  
@@ -27,14 +27,14 @@ func start --csharp
 
 下の画像のように、 `Webhook: [POST] http://localhost:7071/api/Webhook` と表示されたらCodespaces上でのAzure Functionsのデバッグ起動が成功です。
 
-![Codespacesデバッグ2](images/debug_codespaces_2.png)
+![Azure Functionsデバッグ起動ログ](images/debug_codespaces_2.png)
 
 ### ポートの公開範囲を変更
 Codespaces画面下部の「ポート」タブを開きます。  
 ポート `7071` を右クリックし、「ポートの表示範囲」を「Public」に変更します。  
 この時生成されている公開用のURLを控えておいてください。
 
-![Codespacesデバッグ3](images/debug_codespaces_3.png)
+![Codespacesポート公開](images/debug_codespaces_3.png)
 
 ### LINE Webhook URLの設定と動作確認
 先ほど控えておいた公開用URLに `/api/Webhook` と付ける形でLINE DevelopersのWebhook URL設定に設定します。
@@ -48,7 +48,7 @@ Codespaces画面下部の「ポート」タブを開きます。
 画面左側の「By Repository」から使用したCodespacesの詳細を開きます。
 右側の「…」を選択し、「Delete」で削除します。
 
-![Codespacesデバッグ4](images/debug_codespaces_4.png)
+![Codespaces管理画面](images/debug_codespaces_4.png)
 
 ## 4-2. ローカルPCでのデバッグ手順
 本章ではローカルPCでソースコードの実行を行うため、事前にソースコードをcloneしてください。  
@@ -59,11 +59,11 @@ Codespaces画面下部の「ポート」タブを開きます。
 VSCodeを起動し、左上の「File」→「Open Folder」で`hol-azure-line-bot-functions`フォルダを開きます。  
 VSCode上でF1キーからコマンドパレットを起動し、「Dev Containers:Reopen in Container」を選択します。
 
-![devcontainer起動1](images/devcontainer_start_1.png)
+![Dev Containers起動メニュー](images/devcontainer_start_1.png)
 
 VSCodeが起動しなおし、コンテナが動いていることが確認できます。
 
-![devcontainer起動2](images/devcontainer_start_2.png)
+![Dev Containers起動確認](images/devcontainer_start_2.png)
 
 ### local.settings.jsonを作成
 `Functions/local.settings.json` ファイルを作成します。  
@@ -83,7 +83,7 @@ func start --csharp
 
 下の画像のように、 `Webhook: [POST] http://localhost:7071/api/Webhook` と表示されたらDev Containers上でのAzure Functionsのデバッグ起動が成功です。
 
-![devcontainer起動3](images/devcontainer_start_3.png)
+![Azure Functionsデバッグ起動ログ](images/devcontainer_start_3.png)
 
 ### ngrokを使用したLINE Botとの疎通
 ngrokが使用できるターミナルを開き、以下コマンドを実行します。

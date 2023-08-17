@@ -4,48 +4,48 @@
 まず、Azure OpenAI Serviceのリソースを作成します。  
 [Azureポータル](https://portal.azure.com) から、前章で作成したリソースグループを開き、「作成」ボタンを選択します。
 
-![AzureOpenAIリソース作成1](images/create_azureopenai_1.png)
+![リソース作成ボタン](images/create_azureopenai_1.png)
 
 検索バーに「openai」等を入力し、Azure OpenAIを検索し、「作成」のプルダウンメニューから「Azure OpenAI」を選択しリソースを作成します。
 
-![AzureOpenAIリソース作成2](images/create_azureopenai_2.png)
+![リソース検索バー](images/create_azureopenai_2.png)
 
 下記スクリーンショットに倣って情報を入力します。  
 入力後確認および作成の画面で「作成」へと移ってください。
 
-![AzureOpenAIリソース作成3](images/create_azureopenai_3.png)
+![Azure OpenAI Service作成入力画面](images/create_azureopenai_3.png)
 
 以下のように「デプロイが完了しました」と表示されれば、Azure OpenAI Serviceリソースの作成が完了です。
 
-![AzureOpenAIリソース作成4](images/create_azureopenai_4.png)
+![Azure OpenAI Service作成完了画面](images/create_azureopenai_4.png)
 
 ### モデルのデプロイ
 作成したAzure OpenAI Serviceリソースを開き、「探索」を選択します。
 
-![AzureOpenAIモデルデプロイ1](images/deploy_azureopenai_1.png)
+![Azure OpenAI Serviceリソース概要画面](images/deploy_azureopenai_1.png)
 
 「デプロイ」タブへと移動し、「新しいデプロイの作成」を選択します。
 
-![AzureOpenAIモデルデプロイ2](images/deploy_azureopenai_2.png)
+![Azure OpenAI Studioデプロイ一覧画面](images/deploy_azureopenai_2.png)
 
 下記スクリーンショットに倣って情報を入力します。  
 入力後、「作成」を選択します。
 
-![AzureOpenAIモデルデプロイ3](images/deploy_azureopenai_3.png)
+![Azure OpenAI Studioデプロイ作成入力画面](images/deploy_azureopenai_3.png)
 
 以下のように作成したモデルが表示されれば、モデルのデプロイ作成完了です。
 
-![AzureOpenAIモデルデプロイ4](images/deploy_azureopenai_4.png)
+![Azure OpenAI Studioデプロイ一覧画面](images/deploy_azureopenai_4.png)
 
 ### エンドポイントとキーの確認
 右上の歯車アイコンを選択した後、「Resource」タブを開きます。
 
-![AzureOpenAIモデルデプロイ1](images/check_azureopenai_key_1.png)
+![Azure OpenAI Studio設定画面](images/check_azureopenai_key_1.png)
 
 作成したOpenAIリソースのエンドポイントとキーはこのページで確認できます。  
 「Endpoint」、「Key」の値を控えておきます。
 
-![AzureOpenAIモデルデプロイ2](images/check_azureopenai_key_2.png)
+![Azure OpenAI Studioリソース接続情報確認画面](images/check_azureopenai_key_2.png)
 
 ## 3-2. Azure Functionsの更新
 ### アプリケーション設定の追加
@@ -59,7 +59,7 @@
   - `AZURE_OPENAI_API_MODEL_NAME` : OpenAI Service のデプロイ名,
 - 「保存」ボタンを押下
 
-![MessagingAPI](images/setting_env_variables_1.png)
+![Azure Functionsアプリケーション設定画面](images/setting_env_variables_1.png)
 
 ### LINEの返答内容を変更
 LINEトークルームへ送信されたメッセージに対して、Azure OpenAI Serviceを介して返答内容を作成するように変更します。  
@@ -118,13 +118,13 @@ await Reply(firstEvent.ReplyToken, replyText);
 ご自身のGitHubリポジトリページから「Actions」タブを開きます。  
 ビルドとデプロイができているか確認し、緑のチェックマークになっていれば再ビルドと再デプロイが成功です。
 
-![返信メッセージの変更2](images/reply_change_2.png)
+![GitHub Actionsログ画面](images/reply_change_2.png)
 
 ## 3-3. LINE上から動作確認
 ご自身の端末からLINEを開き、返信内容が変わることを動作確認します。  
 先ほどのような送ったメッセージそのままではなく、Azure OpenAI Serviceが生成した文章が返信されたら成功です。
 
-![返信メッセージの変更2](images/reply_change_3.png)
+![LINEトークルーム画面](images/reply_change_3.png)
 
 ハンズオンの内容は以上になります。  
 お疲れ様でした:blush:
@@ -133,6 +133,6 @@ await Reply(firstEvent.ReplyToken, replyText);
 **今回のハンズオンが終了したら、Azureポータルからハンズオン用に作成した全てのリソースグループを削除してください。**  
 （※弊社よりハンズオン用環境を払い出ししている場合は一旦削除せず、スタッフにご確認ください。）
 
-![リソースの削除](images/delete_resourcegroup_1.png)
+![リソースグループの削除ボタン](images/delete_resourcegroup_1.png)
 
 時間が余った方は、ローカルデバッグにチャレンジしてみましょう！「[4. （上級編）Azure Functionsのローカルデバッグを行う](./4-debug.md)」
