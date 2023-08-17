@@ -1,7 +1,7 @@
 # 1. ソースコードの準備
 ## 1-1. GitHubからソースコードを取得
 はじめに、GitHubからソースコードをフォークします。  
-[ハンズオンのソースコードリポジトリ](https://github.com/alterbooth/hol-azure-line-bot-functions) を開き、右上の「Fork」をクリックします。
+[ハンズオンのソースコードリポジトリ](https://github.com/alterbooth/hol-azure-line-bot-openai) を開き、右上の「Fork」をクリックします。
 
 ![ソースコードの準備1](images/preparing_source_1.png)
 

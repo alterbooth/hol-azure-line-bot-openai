@@ -135,4 +135,4 @@ await Reply(firstEvent.ReplyToken, replyText);
 
 ![リソースの削除](images/delete_resourcegroup_1.png)
 
-時間が余った方は、ローカルデバッグにチャレンジしてみましょう！「[4. （上級編）Azure Functionsのローカルデバッグを行う](./docs/4-debug.md)」
+時間が余った方は、ローカルデバッグにチャレンジしてみましょう！「[4. （上級編）Azure Functionsのローカルデバッグを行う](./4-debug.md)」
