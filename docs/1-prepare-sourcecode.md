@@ -9,4 +9,4 @@ Ownerの「Select an owner」でご自身のアカウントを選択し、一番
 
 ![ソースコードの準備2](images/preparing_source_2.png)
 
-フォーク後、ご自身のリポジトリが作成されていることが確認できたら、次のステップ「[LINE Botの作成](/docs/2-functions-create.md)」へ進みます。
+フォーク後、ご自身のリポジトリが作成されていることが確認できたら、次のステップ「[2. LINE Botの作成](/docs/2-functions-create.md)」へ進みます。

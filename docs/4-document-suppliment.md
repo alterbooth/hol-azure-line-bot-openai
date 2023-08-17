@@ -14,7 +14,7 @@ Codespacesが利用できる方は [4-1. Codespacesでデバッグを行う](#4-
 `Functions/local.settings.json.template` の中身をコピーし、 `LINE_CHANNEL_ACCESS_TOKEN` 、 `AZURE_OPENAI_API_～` にそれぞれ、以前の手順でAzure Functionsに設定したものと同じ値を設定します。
 
 - `LINE_CHANNEL_ACCESS_TOKEN` の設定内容は [こちら](./2-functions-create.md#アプリケーション設定にlineチャネルアクセストークンを追加)
-- `AZURE_OPENAI_API_～` の設定内容は [こちら](./3-reply-redeploy.md#3-4-環境変数の設定)
+- `AZURE_OPENAI_API_～` の設定内容は [こちら](./3-reply-redeploy.md#アプリケーション設定の追加)
 
 ### Functionsをデバッグ起動
 Codespaces画面下部の「ターミナル」タブから、追加で新しくターミナルを開きます。  

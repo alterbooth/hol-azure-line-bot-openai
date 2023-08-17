@@ -48,8 +48,8 @@
 ![AzureOpenAIモデルデプロイ2](images/check_azureopenai_key_2.png)
 
 ## 3-2. Azure Functionsの更新
-### 環境変数の設定
-使用するAzure OpenAI Serviceリソースを下記手順でAzure Functionsに設定します。
+### アプリケーション設定の追加
+使用するAzure OpenAI Serviceリソースの接続情報を、（LINEチャネルアクセストークン同様）下記手順でAzure Functionsのアプリケーション設定に追加します。
 
 - 作成したFunctionsのリソースへ移動
 - リソース画面の左サイドメニューにある設定カテゴリ→「構成」タブへ移動
@@ -135,4 +135,4 @@ await Reply(firstEvent.ReplyToken, replyText);
 
 ![リソースの削除](images/delete_resourcegroup_1.png)
 
-時間が余った方は、ローカルデバッグにチャレンジしてみましょう！「[（上級編）Dev Containersとngrokを使ってローカルデバッグを行う](/docs/4-document-suppliment.md)」
+時間が余った方は、ローカルデバッグにチャレンジしてみましょう！「[4. （上級編）Azure Functionsのローカルデバッグを行う](/docs/4-document-suppliment.md)」
