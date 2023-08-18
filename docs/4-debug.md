@@ -56,7 +56,7 @@ Codespaces画面下部の「ポート」タブを開きます。
 
 ### Dev Containersを使って開発環境を立ち上げる
 まずは、`Docker`を起動した状態(Docker Desktopを使用する場合は、Docker Desktopを起動した状態)にします。  
-VSCodeを起動し、左上の「File」→「Open Folder」で`hol-azure-line-bot-functions`フォルダを開きます。  
+VSCodeを起動し、左上の「File」→「Open Folder」で`hol-azure-line-bot-openai`フォルダを開きます。  
 VSCode上でF1キーからコマンドパレットを起動し、「Dev Containers:Reopen in Container」を選択します。
 
 ![Dev Containers起動メニュー](images/devcontainer_start_1.png)

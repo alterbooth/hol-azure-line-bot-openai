@@ -105,7 +105,7 @@ Azure Functionsリソースにサンプルコードをデプロイします。
 コードソースを選択で「GitHub」を選択し、下記の手順で必要事項を選択したらファイルのプレビューをクリックします。
 
  - 組織：ご自身のアカウント
- - リポジトリ： `hol-azure-line-bot-functions`
+ - リポジトリ： `hol-azure-line-bot-openai`
  - ブランチ： `main`
 
 ![デプロイセンター入力画面](images/deploy_functions_2.png)
